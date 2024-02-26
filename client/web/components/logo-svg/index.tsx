@@ -3,6 +3,7 @@ import { useFetchConfigQuery, useFetchConfigSvgQuery } from '../../api';
 
 export default function LogoSvg(props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) {
     const { data: config } = useFetchConfigQuery();
+    if (!config) return;
     let url = config.siteLogo;
     if (config.siteLogo.indexOf(config.siteDomain) > 0) {
         url = config.siteLogo.substring(config.siteLogo.indexOf(config.siteDomain) + config.siteDomain.length);

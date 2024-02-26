@@ -21,7 +21,7 @@ const Page = (props) => {
     return (
         <AppLayout>
             <Head>
-                <title>{config.siteTitle + '-博客'}</title>
+                <title>博客</title>
             </Head>
             <Categories></Categories>
             <div style={{ margin: '15px 0' }}>

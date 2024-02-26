@@ -111,7 +111,6 @@ export default function SiderMenu(props: Props) {
                 <Link href="/admin/content/articles">
                     <div className={style.logo}>
                         <Image preview={false} width={32} height={32} src={config.siteLogo} alt="" />
-                        <h1>{config.siteTitle}</h1>
                     </div>
                 </Link>
                 <div className={style.userMenu}>

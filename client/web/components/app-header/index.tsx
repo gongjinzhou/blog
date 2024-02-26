@@ -22,7 +22,6 @@ export const AppHeader = () => {
         <header className={style.appHeader}>
             <Link href="/blog" passHref={true} className={style.siteTitle}>
                 <LogoSvg className={style.siteTileSvgWrap}></LogoSvg>
-                <h1>{config.siteTitle}</h1>
             </Link>
             <nav className={style.nav}>
                 <NavLink href="/blog" className={clsx(style.navA, 'active')}>

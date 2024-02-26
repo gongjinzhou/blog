@@ -19,7 +19,7 @@ export const AppFooter = () => {
                     <div className={style.siteInfo}>
                         <div className={style.svgWrap}>
                             <LogoSvg></LogoSvg>
-                            <p className={style.siteTitle}>欢迎来到 {config.siteTitle} 😀</p>
+                            <p className={style.siteTitle}>欢迎来到 😀</p>
                         </div>
                         <p className={style.siteTitle}>这里主要分享前后端技术文章，致力于web技术研究。</p>
                     </div>
@@ -35,9 +35,6 @@ export const AppFooter = () => {
                             <a>
                                 <QQIcon></QQIcon>
                             </a>
-                            <a href={config.projectGithub}>
-                                <GithubIcon></GithubIcon>
-                            </a>
                         </div>
                     </div>
                     <div className={style.statement}>
@@ -49,13 +46,7 @@ export const AppFooter = () => {
                             <span>运行时间：</span>
                             <BlogRuningTime></BlogRuningTime>
                         </Space>
-                        <div>
-                            版权 © 2016-{new Date().getFullYear()} {config.siteTitle}
-                            <a href={config.icpGovCn}>
-                                <img src={icpPng.src} alt={icpPng.src} />
-                                <span>{config.siteIcp}</span>
-                            </a>
-                        </div>
+                        <div>版权 © 2016-{new Date().getFullYear()}</div>
                     </div>
                 </section>
                 <section className={style.support}>
